@@ -1,3 +1,4 @@
+const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -5,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Source Sans Pro", "ui-sans-serif", "system-ui"],
+        mono: ["IBM Plex Mono", "ui-monospace"]
+      },
       colors: {
         "colors": {
           "yelow": {
@@ -23,5 +28,14 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function({addUtilities}) {
+      const utilities = {
+        ".bg-hero": {
+          "background-image": "url(/img/hero.png)"
+        }
+      }
+      addUtilities(utilities)
+    })
+  ],
 }
