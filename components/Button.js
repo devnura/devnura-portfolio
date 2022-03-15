@@ -2,7 +2,7 @@ export default function Button({ className, variant, children }) {
     const addClassName = className ? `${className}` : ""
 
     const variants = {
-        "outline-yellow": "border border-yellow-500 text-yellow-500",
+        "outline-yellow": "border-2 border-yellow-500 text-yellow-500",
         "yellow": "bg-yellow-500 text-black"
     }
 

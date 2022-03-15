@@ -12,6 +12,7 @@ module.exports = {
       },
       colors: {
         "colors": {
+          "skill": "#F7F7FB",
           "yelow": {
             "50": "#FFFDEB",
             "100": "#FEFAD7",
@@ -32,7 +33,10 @@ module.exports = {
     plugin(function({addUtilities}) {
       const utilities = {
         ".bg-hero": {
-          "background-image": "url(/img/hero.png)"
+          "background-image": "url(/img/hero.svg)"
+        },
+        ".shadow-skill":{
+          "box-shadow": "0px 15px 30px rgba(0, 0, 0, 0.1)"
         }
       }
       addUtilities(utilities)
