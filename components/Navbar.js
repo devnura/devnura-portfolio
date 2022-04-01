@@ -12,7 +12,7 @@ export default function Navbar() {
           <Nav/>
         </div>
         <div className="w-3/12 text-right">
-          <Button variant="outline-yellow">Contact </Button>
+          <Button variant="outline-yellow" pill>Contact </Button>
         </div>
     </div>
     )

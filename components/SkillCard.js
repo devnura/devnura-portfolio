@@ -1,7 +1,7 @@
 export default function SkillCard({ name, level, image, imageClassName }) {
     const addImageClassName = imageClassName ? `${imageClassName}` : ""
     return (
-        <div className="bg-white shadow-skill rounded-lg p-6 flex items-center">
+        <div className="bg-white shadow-skill rounded-lg p-6 flex items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-12 0 duration-300">
         <img src={ image } className={`mr-6 ${addImageClassName}`}/>
         <div>
             <h4 className="text-lg font-semibold">{ name }</h4>

@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 export default function Hero() {
     return (
-      <div className="bg-hero h-[713px]">
+      <div className="bg-hero 2xl:h-[712px] xl:h-[600px] lg:h-[550px] md:h-[500px] pb-20">
         <div className="container mx-auto">
           <Navbar/>
         </div>
@@ -13,7 +13,7 @@ export default function Hero() {
             <p className="text-white text-opacity-20 text-lg w-6/12 mx-auto mt-6 leading-relaxed">
               Sejak 13 tahun saya memulai programming. Sejak 3 tahun memulai UI design.
             </p>
-            <Button variant="yellow" className="mt-12">Pelajari</Button>
+            <Button pill variant="yellow" className="mt-12">Pelajari</Button>
           </h1>
         </div>
       </div>
